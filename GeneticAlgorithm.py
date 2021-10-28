@@ -13,10 +13,10 @@ class GeneticAlgorithm:
     - simple random mutation. """
 
     POPULATION_SIZE = 50
-    POPULATIONS_LIMIT = 500
+    POPULATIONS_LIMIT = 200
     CHROMOSOME_MUTATION_PROBABILITY = 0.2
     CHROMOSOME_MUTATION_BORDER = 0.2
-    RANDOM_SEED = 1975
+    RANDOM_SEED = 1990
 
     # Keep starting population to compare with the resulting population
     starting_population = list()
@@ -122,7 +122,6 @@ class GeneticAlgorithm:
     # Selection to new population functions
 
     def create_new_population(self):
-        # TODO: Change.
         """ Elite selection. """
         fitness_list = list()
 
